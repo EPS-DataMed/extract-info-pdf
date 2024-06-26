@@ -30,18 +30,3 @@ async def upload_pdf(file: UploadFile = File(...), patterns: str = Form(...)):
 
     except Exception as e:
         raise HTTPException(status_code=400, detail=f"An error occurred: {str(e)}")
-
-if __name__ == "__main__":
-    import uvicorn
-    import logging
-    logging.basicConfig(level=logging.INFO)
-    logging.info("Starting server...")
-    uvicorn.run(
-        "main:app",
-        host="0.0.0.0",
-        port=8000,
-        reload=True,
-    )
-
-
-

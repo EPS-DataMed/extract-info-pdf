@@ -1,3 +1,8 @@
 fastapi
 uvicorn
+pydantic
 PyMuPDF
+pytest
+pytest-mock
+httpx
+reportlab
