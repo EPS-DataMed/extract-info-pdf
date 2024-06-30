@@ -1,6 +1,8 @@
 
 # Processador de Regex em PDF
 
+[![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=EPS-DataMed_extract-info-pdf&metric=alert_status)](https://sonarcloud.io/summary/new_code?id=EPS-DataMed_extract-info-pdf) [![Coverage](https://sonarcloud.io/api/project_badges/measure?project=EPS-DataMed_extract-info-pdf&metric=coverage)](https://sonarcloud.io/summary/new_code?id=EPS-DataMed_extract-info-pdf) [![Lines of Code](https://sonarcloud.io/api/project_badges/measure?project=EPS-DataMed_extract-info-pdf&metric=ncloc)](https://sonarcloud.io/summary/new_code?id=EPS-DataMed_extract-info-pdf)
+
 Este projeto é uma aplicação web baseada no FastAPI que processa arquivos PDF para encontrar padrões especificados pelo usuário usando expressões regulares. Ele lê o conteúdo do PDF, aplica os padrões de regex fornecidos e retorna as correspondências encontradas no documento.
 
 ## Instalação
