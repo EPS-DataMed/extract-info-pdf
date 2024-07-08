@@ -1,8 +1,8 @@
-fastapi
-uvicorn
-pydantic
-PyMuPDF
-pytest
-pytest-mock
-httpx
-reportlab
+fastapi==0.111.0
+uvicorn==0.30.1
+pydantic==2.8.2
+PyMuPDF==1.24.7
+pytest==8.2.2
+pytest-mock==3.14.0
+httpx==0.27.0
+reportlab==4.2.2
