@@ -43,10 +43,10 @@ Siga os passos abaixo para configurar o ambiente de desenvolvimento local:
 4. **Execute a aplicação**
 
    ```bash
-   uvicorn app.main:app --host 0.0.0.0 --port 8000 --reload
+   uvicorn app.main:app --host 0.0.0.0 --port 8006 --reload
    ```
 
-   A aplicação estará disponível em `http://127.0.0.1:8000`.
+   A aplicação estará disponível em `http://127.0.0.1:8006`.
 
 ### Testes
 
@@ -73,7 +73,7 @@ Siga os passos abaixo para configurar o ambiente de desenvolvimento local:
     docker-compose up
     ```
 
-A aplicação estará disponível em `http://127.0.0.1:8000`.
+A aplicação estará disponível em `http://127.0.0.1:8006`.
 
 ## Uso
 
@@ -96,7 +96,7 @@ Você pode usar `curl` ou Postman para enviar uma requisição ao servidor.
 2. Use `curl` para enviar a requisição:
 
     ```bash
-    curl -X POST "http://127.0.0.1:8000/process/pdf/regex"     -H "accept: application/json"     -H "Content-Type: multipart/form-data"     -F "file=@/path/to/your/file.pdf"     -F 'patterns={"patterns":{"hemoglobin":["HEMOGLOBINA\s*([\d,\.]+)\s*g/dL","g/dL"],"hematócrit":["HEMATÓCRITO\s*([\d,\.]+)\s*%","%"],"red_blood_cells":["HEMÁCIAS\s*([\d,\.]+)\s*milhões/mm3","milhões/mm3"]}}'
+    curl -X POST "http://127.0.0.1:8006/process/pdf/regex"     -H "accept: application/json"     -H "Content-Type: multipart/form-data"     -F "file=@/path/to/your/file.pdf"     -F 'patterns={"patterns":{"hemoglobin":["HEMOGLOBINA\s*([\d,\.]+)\s*g/dL","g/dL"],"hematócrit":["HEMATÓCRITO\s*([\d,\.]+)\s*%","%"],"red_blood_cells":["HEMÁCIAS\s*([\d,\.]+)\s*milhões/mm3","milhões/mm3"]}}'
     ```
 
 ### Exemplo usando Postman
