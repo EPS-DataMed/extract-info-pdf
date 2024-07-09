@@ -10,6 +10,10 @@ app = FastAPI()
 class PatternRequest(BaseModel):
     patterns: Dict[str, Tuple[str, str]]
 
+@app.get("/")
+def root():
+    return {"message": "Welcome to the extract info pdf API"}
+
 @app.post("/process/pdf/regex")
 async def upload_pdf(file: UploadFile = File(...), patterns: str = Form(...)):
     try:
